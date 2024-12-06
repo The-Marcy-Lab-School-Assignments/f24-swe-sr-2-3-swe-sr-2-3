@@ -22,11 +22,21 @@ Describe the difference between `grid-template-areas` and `grid-template-columns
 
 ### Response 3
 
+The grid-template-areas property allows you to define the grid layout in a more visual way by naming specific areas of the grid. This is especially useful when you want to see the page layout in a more visual style that mirrors the webpages layout. 
+
+On the other hand, grid template columns and rows are two properties that define the size of the said portions within a CSS grid. They're used together to create a grid layout.
+
+You would prefer to use grid template areas when you have a complex layout with more clearly defined portions. This option can also be more useful when you need to rearrage the layout by changing the names of areas instead of adjusting the line numbers of the grid. On the contrary, you'd want to use grid template columns and rows whenever you need a finer say over the sizes of individual columns and rows. Doing so would allow you a more flexible layout which can also be more manageable when there isn't clear regions that need to be named.
+
 ## Prompt 4
 
 Explain the `min-width` and `max-width` keywords in media queries. How do they help create responsive breakpoints for different screen sizes?
 
 ### Response 4
+
+ The `min-width` querie targets devices that have a viewing port equal or greater than the specified value which is mainly used for larger screen sizes. On the other end, `max-width` targets devices that have a viewport width that's less than or equal to the specified value. This is typically used for adding styles with smaller screens.
+
+ The min and max width queries assist in creating more responsive breakpoints for different screen sizes by allowing a web application to adapt to different screen sizes without breaking the layout of the webpage which is essential for offering an amazing user experience. 
 
 ## Prompt 5
 
