@@ -47,4 +47,21 @@ Imagine you are teaching a brief lesson on **mobile first design**. Your lesson 
 * An explanation of the code example.
 
 ### Response 5
+Mobile-first design is designing programs for the smallest screen size first and evenutally adapting that design to larger screen sizes. Mobile-first design practices prioritize content in the context of user experience, signifying significance with element types such as paragraphs and headings. By avoiding the use of hover effects and large, complex images that cannot be easily adjusted for viewing across screen sizes, developers can ensure their applications are useable on mobile devices where hovering over elements is not possible and complex images can make pages harder to understand or to read. By decluttering a page and including less elements, developers can increase the likelihood their pages load faster and make the pages more accessible.
 
+```css
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+@media (min-width: 800px) {
+    .flex-container {
+        flex-direction: row;
+        background-color: green;
+    }
+}
+```
+
+This CSS file first sets the `display` of elements of the `flex-container` class to `flex`, creating a flexbox. The `flex-direction` value of `column` ensures that all elements in this flexbox will initially be positioned in a column. On mobile devices, the flexbox's elements will be in a column and the background color of the container will be red. On devices of 800px or more, the `background-color` is now set to `green` and the `flex-direction` value is now `row`, changing the direction of the elements given how there is a greater horizontal width for the elements of the flexbox to fit along the main axis.
