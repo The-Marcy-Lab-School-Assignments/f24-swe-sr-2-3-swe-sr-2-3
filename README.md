@@ -82,4 +82,4 @@ The benefit in doing this is primarily for the user. The user could experience b
 }
 ```
 
-this was an example of using the screens sizes, 768px is an industry practice for the size of tablets. We started with a base design for mobile (typically 320px but iphone is typically around 375px) and changed the design/layout for tablets, and we could go further and change it again for larger screens!
+this was an example of using the screens sizes, 768px is an industry practice for the size of tablets. We started with a base design for mobile (typically 320px but iphone is typically around 375px) and changed the design/layout for tablets, and we could go further and change it again for larger screens!!
