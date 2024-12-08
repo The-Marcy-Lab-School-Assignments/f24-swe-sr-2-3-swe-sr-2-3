@@ -52,7 +52,7 @@ Imagine you are teaching a brief lesson on **mobile first design**. Your lesson 
 
 ### Response 5
 
-Mobile-first design is the idea that starts designs and layouts for small screens and then builds on-top of that design as the screen size gets bigger. The main idea is to make the 'app' in the most constrained setting first then add more complex elements later for bigger screens.
+**Mobile-first design** is the idea that starts designs and layouts for small screens and then builds on-top of that design as the screen size gets bigger. The main idea is to make the 'app' in the most constrained setting first then add more complex elements later for bigger screens.
 
 The benefit in doing this is primarily for the user. The user could experience better performance, user experience, etc. As the programmer you can get better scalability since your building on top of the small baseline screen size. This ultimately makes this method future proof.
 
