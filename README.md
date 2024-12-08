@@ -18,6 +18,10 @@ What is the difference between `justify-content` and `align-items` in Flexbox? H
 
 ### Response 2
 
+**_justify-content_** and **_align-items_** both control where the flexbox will be located on a document. It just changes which axis the flexbox will move on.
+
+**_justify-content_** moves the flexbox on the main axis. When flexbox is set to the default direction, **_justify-content_** axis runs from left to right and **_align-items_** moves the flexbox vertically (up or down).
+
 ## Prompt 3
 
 Describe the difference between `grid-template-areas` and `grid-template-columns`/`grid-template-rows`. When might you prefer one approach over the other?
@@ -36,6 +40,8 @@ Explain the `min-width` and `max-width` keywords in media queries. How do they h
 
 ### Response 4
 
+when working with Media queries, **_min-width_** and **_max-width_** set the size of containers and items to be a certain size once the screen resolution gets to a set screen size.
+
 ## Prompt 5
 
 Imagine you are teaching a brief lesson on **mobile first design**. Your lesson should include the following information:
@@ -45,3 +51,35 @@ Imagine you are teaching a brief lesson on **mobile first design**. Your lesson 
 - An explanation of the code example.
 
 ### Response 5
+
+Mobile-first design is the idea that starts designs and layouts for small screens and then builds on-top of that design as the screen size gets bigger. The main idea is to make the 'app' in the most constrained setting first then add more complex elements later for bigger screens.
+
+The benefit in doing this is primarily for the user. The user could experience better performance, user experience, etc. As the programmer you can get better scalability since your building on top of the small baseline screen size. This ultimately makes this method future proof.
+
+`HTML`
+
+```html
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+</div>
+```
+
+`CSS`
+
+```css
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+```
+
+this was an example of using the screens sizes, 768px is an industry practice for the size of tablets. We started with a base design for mobile (typically 320px but iphone is typically around 375px) and changed the design/layout for tablets, and we could go further and change it again for larger screens!
