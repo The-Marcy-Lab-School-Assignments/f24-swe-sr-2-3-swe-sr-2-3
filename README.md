@@ -16,6 +16,8 @@ What is the difference between `justify-content` and `align-items` in Flexbox? H
 
 ### Response 2
 
+The difference in justify-content and align-items lies in the axis they control in positioning elements in FlexBox. Justify-content, aligns items along the main axis. On the other hand, align-items arranges items along the perpendicular axis. An important detail to consider is the direction their aligned is dependent on the flex-direction of the container.
+
 ## Prompt 3
 
 Describe the difference between `grid-template-areas` and `grid-template-columns`/`grid-template-rows`. When might you prefer one approach over the other?
@@ -29,9 +31,9 @@ EXAMPLE:
 ```css
 body {
   grid-template-areas:
-    "header header header"
-    "sidebar content content"
-    "footer footer footer";
+    'header header header'
+    'sidebar content content'
+    'footer footer footer';
 }
 
 .header {
@@ -60,6 +62,30 @@ Now `grid-template-columns` and `grid-template-rows` specifically handles how we
 Explain the `min-width` and `max-width` keywords in media queries. How do they help create responsive breakpoints for different screen sizes?
 
 ### Response 4
+
+The `min-width` and `max-width` keywords are used to apply styles based on the width of the viewport i.e screen size of the device. They are crucial in enabling responsive breakpoints for various screen sizes because they give you the ability to adapt your CSS styling based on defined a range of screen sizes.
+
+The example below demonstrates the key differences between the two keywords.
+
+```
+@media (min-width: 500px) {
+    body {
+        background-color:red
+    }
+}
+```
+
+In the CSS code above, the `min-width` keyword is used to apply background styling to screen sizes equal to or greater than the specified width. In this case, the body will have a background color of red on all screen sizes greater than 500px wide.
+
+```
+@media (max-width: 1200px) {
+    body {
+        background-color:blue
+    }
+}
+```
+
+The `max-width` keyword is used to apply the background styling to screen sizes equal to or less than the specified width. In this instance, the background color of the body will be set to blue.
 
 ## Prompt 5
 
